@@ -1,0 +1,6 @@
+:root {
+  --color-primary: coral;
+  --color-secondary: rgba(0 0 0 /0.5);
+  --color-dark: rgba(0 0 0 /0.8);
+  --color-light: #eee;
+}

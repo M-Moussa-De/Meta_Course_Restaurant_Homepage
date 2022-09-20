@@ -1,0 +1,58 @@
+/*============== Hero ==============*/
+header {
+  position: relative;
+  height: 98vh;
+  /* background: url("https://cdn.pixabay.com/photo/2018/04/13/17/14/vegetable-skewer-3317060_960_720.jpg")
+    no-repeat center; */
+  background-size: cover;
+  background: #888;
+}
+nav {
+  background: var(--color-secondary);
+  padding: 15px;
+}
+nav ul li {
+  margin: auto 15px;
+}
+nav ul li a {
+  color: #fff !important;
+}
+
+.hero_title {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff !important;
+  width: 100%;
+  text-align: center;
+}
+.hero_title h1 {
+  font-size: 60px;
+  letter-spacing: 5px;
+  font-family: "Pacifico", cursive;
+}
+.hero_title p {
+  font-weight: 600;
+  margin-top: 20px;
+  letter-spacing: 5px;
+}
+@media (min-width: 768px) {
+  .hero_title {
+    font-size: 30px;
+    font-weight: 900;
+  }
+}
+
+/*============== Menu ==============*/
+
+#menu .menu_categ {
+  background: var(--color-secondary);
+  padding: 20px;
+}
+#menu .menu_categ li {
+  cursor: pointer;
+  width: 100%;
+  background: coral;
+  margin: 20px 0;
+}
