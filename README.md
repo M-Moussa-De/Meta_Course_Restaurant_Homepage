@@ -6,6 +6,12 @@ Students have to create a static page for a chosen project, in order to graduate
 
 I've chosen to create a simple restaurant home page, includes a main navigation, hero, menu, contact and footer section.
 
+No CSS library was used, but vanilla.
+
+Fontawesome was used, to include some icons
+
+###Note: External images were included, and have not been modified by me. Many thanks to their owners.
+
 Gladly, have a look on the attached screenshots :)
 
 ![Alt text](./assets/screenshots/1.png?raw=true)
