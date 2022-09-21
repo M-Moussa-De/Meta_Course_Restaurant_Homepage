@@ -1,5 +1,378 @@
-@import url("variables.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&display=swap");
 
-@import url("rest_default.css");
+:root {
+  --color-primary: coral;
+  --color-secondary: rgba(0 0 0 /0.5);
+  --color-dark: rgba(0 0 0 /0.8);
+  --color-light: #d9d4d3;
+}
 
-@import url("main.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-dark);
+  min-height: 100vh;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 70%;
+  }
+}
+
+ul {
+  list-style: none;
+}
+a {
+  color: var(--color-dark);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+a:focus,
+a:visited,
+a:active {
+  color: inherit;
+}
+
+a:hover {
+  color: var(--color-light);
+}
+
+section {
+  min-height: 100vh;
+}
+
+section h2 {
+  font-family: "Pacifico", cursive;
+  padding: 60px 0 30px;
+  font-size: 40px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 8px 6px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+fieldset {
+  border: none;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+button {
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #fff;
+  background: #521c01;
+  border-radius: 3px;
+}
+
+/* Main styling */
+/*============== Hero ==============*/
+header {
+  position: relative;
+  height: 98vh;
+  background: url("https://cdn.pixabay.com/photo/2019/07/30/19/09/bbq-4373644_960_720.jpg")
+    no-repeat center;
+  background-size: cover;
+}
+nav {
+  background: var(--color-secondary);
+  height: 50px;
+}
+nav ul {
+  margin: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  margin: auto 18px;
+  transition: all ease-in-out 0.2s;
+  border: none;
+  position: relative;
+}
+
+nav ul li:hover {
+  border: none;
+}
+nav ul li::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  left: 50%;
+  bottom: 0;
+  background-color: coral;
+  transition: all ease-in-out 0.2s;
+}
+nav ul li:hover::after {
+  width: 100%;
+  left: 0;
+}
+nav ul li:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+nav ul li a {
+  color: var(--color-light) !important;
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.5em;
+  line-height: 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero_title {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff !important;
+  width: 100%;
+  text-align: center;
+}
+.hero_title h1 {
+  font-size: 60px;
+  letter-spacing: 5px;
+  font-family: "Pacifico", cursive;
+}
+.hero_title p {
+  font-weight: 600;
+  margin-top: 20px;
+  letter-spacing: 5px;
+}
+@media (min-width: 768px) {
+  .hero_title {
+    font-size: 30px;
+    font-weight: 900;
+  }
+}
+
+/*============== Menu ==============*/
+#menu h2 {
+  text-align: center;
+}
+
+/* Menu categories */
+#menu .menu_categ {
+  background: var(--color-dark);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#menu .menu_categ li {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 10px 0;
+}
+
+#menu .menu_categ li.active {
+  background: tomato;
+}
+
+.menu_items {
+  margin-top: 1rem;
+}
+
+/* Pizza */
+.menu_items .items {
+  /* display: none; */
+}
+
+.items ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .items ul li {
+    padding-bottom: 50px;
+  }
+}
+
+.items ul li .left,
+.items ul li .right {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .items ul li .left,
+  .items ul li .right {
+    width: 50%;
+  }
+}
+
+.items ul li .right {
+  margin-top: 20px;
+  position: relative;
+}
+
+.items ul li .left h3 {
+  margin-bottom: 1rem;
+}
+
+.items ul li .left p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.items ul li .left .action_btn {
+  display: inline-flex;
+  margin-top: 20px;
+}
+
+.items ul li .left .action_btn > * {
+  padding: 5px;
+  margin: 0 5px;
+  border: 1px solid #eee;
+  outline: none;
+}
+
+.items ul li .left .action_btn button {
+  cursor: pointer;
+}
+
+.items ul li .left .action_btn input,
+.items ul li .left .action_btn input:focus {
+  width: 40px;
+  text-align: center;
+}
+
+.items ul li .right img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.items ul li .right h4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  padding: 5px;
+}
+
+/* Grill */
+
+/*============== Contact ==============*/
+#contact {
+  padding: 80px 0;
+  background: linear-gradient(
+      90deg,
+      rgb(43, 2, 0) 0%,
+      rgb(43, 2, 0) 17%,
+      rgb(43, 2, 0) 100%
+    ),
+    url("https://cdn.pixabay.com/photo/2017/11/08/22/18/spaghetti-2931846_960_720.jpg")
+      no-repeat top;
+  background-size: cover;
+}
+
+#contact .title {
+  text-align: center;
+  color: #fff;
+}
+#contact h2 {
+  padding: 0;
+}
+
+#contact form.form-container {
+  margin-top: 70px;
+  width: 30%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  #contact form.form-container {
+    width: 95%;
+  }
+}
+
+#contact form div,
+#contact form fieldset {
+  margin: 15px auto;
+}
+
+#contact form label,
+#contact form fieldset {
+  color: #fff;
+}
+
+#contact form button[type="submit"] {
+  padding: 12px 18px;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  background: rgb(43, 2, 0);
+  border: 1px solid #fff;
+}
+
+/*============== About/Footer ==============*/
+footer#about {
+  margin: 100px 0 30px;
+}
+footer#about .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  footer#about .container article {
+    margin-top: 40px;
+  }
+}
+
+footer#about .container .social {
+  margin-top: 15px;
+}
+
+footer#about .container .social i {
+  cursor: pointer;
+  margin: 0 8px;
+  font-size: 20px;
+}
+
+footer#about .container hr {
+  border: none;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  margin-top: 30px;
+}
