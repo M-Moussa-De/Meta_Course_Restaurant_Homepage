@@ -10,9 +10,11 @@ No CSS library was used, but vanilla.
 
 Fontawesome was used, to include some icons
 
-###Note: External images were included, and have not been modified by me. Many thanks to their owners.
+### Note: 
 
-Gladly, have a look on the attached screenshots :)
+External images were included, and have not been modified by me. Many thanks to their owners.
+
+Gladly, have a look on the finished project's screenshots :)
 
 ![Alt text](./assets/screenshots/1.png?raw=true)
 ![Alt text](./assets/screenshots/2.png?raw=true)
