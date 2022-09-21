@@ -1,7 +1,5 @@
-@import url("./variables.css");
+@import url("variables.css");
 
-@import url("./rest_default.css");
+@import url("rest_default.css");
 
-@import url("./utilities_classes.css");
-
-@import url("./main.css");
+@import url("main.css");

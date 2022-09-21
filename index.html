@@ -37,7 +37,7 @@
   <body>
     <header>
       <nav>
-        <ul class="flex justify-center">
+        <ul>
           <li><a href="/">Home</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#about">About</a></li>
@@ -54,19 +54,404 @@
     <main>
       <!-- Menu -->
       <section id="menu">
-        <h2 class="text-center">The Menu</h2>
+        <h2>The Menu</h2>
 
         <div class="container">
-          <ul class="menu_categ flex justify-between container-sm">
-            <li>Pizza</li>
-            <li>Grill</li>
+          <!-- Menu categerories -->
+          <ul class="menu_categ">
+            <li class="active" data-set="pizza">Pizza</li>
+            <li data-set="grill">Grill</li>
             <li>Salads</li>
             <li>Drinks</li>
           </ul>
+
+          <!-- Menu items -->
+          <div class="menu_items">
+            <!-- Pizza section -->
+            <section class="items" id="pizza" data-set="pizza">
+              <ul>
+                <li>
+                  <div class="left">
+                    <h3>Prosciutto e funghi pizza</h3>
+                    <article>
+                      <h5>ingredients:</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Iure, voluptatem maiores. Tenetur magnam
+                      </p>
+
+                      <!-- Actions BTNs -->
+                      <div class="action_btn">
+                        <button>-</button>
+                        <input type="text" readonly value="0" />
+                        <button>+</button>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="right">
+                    <img
+                      src="https://cdn.tasteatlas.com/images/dishes/2eb7aad01de840628a7f703e4ecb0bac.jpg?mw=1300"
+                      alt=""
+                    />
+                    <h4>18.99$</h4>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="left">
+                    <h3>St. Louis-Style Pizza</h3>
+                    <article>
+                      <h5>ingredients:</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Deleniti, at.
+                      </p>
+
+                      <!-- Actions BTNs -->
+                      <div class="action_btn">
+                        <button>-</button>
+                        <input type="text" readonly value="0" />
+                        <button>+</button>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="right">
+                    <img
+                      src="https://cdn.tasteatlas.com/images/dishes/4fc5aba9f0ed45d5b448a25809e6ef46.jpg?mw=1300"
+                      alt=""
+                    />
+                    <h4>28.99$</h4>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="left">
+                    <h3>Pizza rustica</h3>
+                    <article>
+                      <h5>ingredients:</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Iure, voluptatem maiores. Tenetur magnam
+                      </p>
+
+                      <!-- Actions BTNs -->
+                      <div class="action_btn">
+                        <button>-</button>
+                        <input type="text" readonly value="0" />
+                        <button>+</button>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="right">
+                    <img
+                      src="https://cdn.tasteatlas.com/images/dishes/1b95e40f25f445aeb1d42db22d98d240.jpg?mw=1300"
+                      alt=""
+                    />
+                    <h4>23.99$</h4>
+                  </div>
+                </li>
+                <li>
+                  <div class="left">
+                    <h3>Detroit-Style Pizza</h3>
+                    <article>
+                      <h5>ingredients:</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Iure, voluptatem maiores. Tenetur magnam
+                      </p>
+
+                      <!-- Actions BTNs -->
+                      <div class="action_btn">
+                        <button>-</button>
+                        <input type="text" readonly value="0" />
+                        <button>+</button>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="right">
+                    <img
+                      src="https://cdn.tasteatlas.com/images/dishes/ea31100f001e498ab9878a1f30a743f8.jpg?mw=1300"
+                      alt=""
+                    />
+                    <h4>32.99$</h4>
+                  </div>
+                </li>
+                <li>
+                  <div class="left">
+                    <h3>Apizza</h3>
+                    <article>
+                      <h5>ingredients:</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Iure, voluptatem maiores. Tenetur magnam
+                      </p>
+
+                      <!-- Actions BTNs -->
+                      <div class="action_btn">
+                        <button>-</button>
+                        <input type="text" readonly value="0" />
+                        <button>+</button>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="right">
+                    <img
+                      src="https://cdn.tasteatlas.com/Images/Dishes/feaf29ba346349c29a1419e88b21bd56.jpg?mw=1300"
+                      alt=""
+                    />
+                    <h4>16.99$</h4>
+                  </div>
+                </li>
+              </ul>
+            </section>
+
+            <!-- Grill section -->
+            <section class="items" id="grill" data-set="grill">
+              <ul>
+                <li>
+                  <div class="left">
+                    <h3>Heavy Hogs BBQ</h3>
+                    <article>
+                      <h5>ingredients:</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Rem illo aperiam placeat porro, vitae quaerat similique
+                        tempore.
+                      </p>
+
+                      <!-- Actions BTNs -->
+                      <div class="action_btn">
+                        <button>-</button>
+                        <input type="text" readonly value="0" />
+                        <button>+</button>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="right">
+                    <img
+                      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/220615-delish-seo-04-harissa-grilled-chicken-horizontal-1748-eb-1656350158.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
+                      alt=""
+                    />
+                    <h4>19.99$</h4>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="left">
+                    <h3>Bold BBQ</h3>
+                    <article>
+                      <h5>ingredients:</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Deserunt, voluptatum. Repellat accusamus doloribus magni
+                        repudiandae dolores incidunt vero! Totam, sapiente
+                        maiores
+                      </p>
+
+                      <!-- Actions BTNs -->
+                      <div class="action_btn">
+                        <button>-</button>
+                        <input type="text" readonly value="0" />
+                        <button>+</button>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="right">
+                    <img
+                      src="https://image.shutterstock.com/image-photo/kebabs-grilled-meat-vegetables-600w-1011777076.jpg"
+                      alt=""
+                    />
+                    <h4>31.99$</h4>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="left">
+                    <h3>heaven BBQ</h3>
+                    <article>
+                      <h5>ingredients:</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Rem illo aperiam placeat porro, vitae quaerat similique
+                        tempore.
+                      </p>
+
+                      <!-- Actions BTNs -->
+                      <div class="action_btn">
+                        <button>-</button>
+                        <input type="text" readonly value="0" />
+                        <button>+</button>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="right">
+                    <img
+                      src="https://image.shutterstock.com/image-photo/homemade-chicken-rotisserie-thyme-lemon-600w-1574170006.jpg"
+                      alt=""
+                    />
+                    <h4>29.99$</h4>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="left">
+                    <h3>All Star BBQ</h3>
+                    <article>
+                      <h5>ingredients:</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Rem illo aperiam placeat porro, vitae quaerat similique
+                        tempore.
+                      </p>
+
+                      <!-- Actions BTNs -->
+                      <div class="action_btn">
+                        <button>-</button>
+                        <input type="text" readonly value="0" />
+                        <button>+</button>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="right">
+                    <img
+                      src="https://image.shutterstock.com/image-photo/tasty-chicken-legs-wings-on-600w-1130070515.jpg"
+                      alt=""
+                    />
+                    <h4>27.99$</h4>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </div>
         </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="title">
+          <h3>Have any question?</h3>
+          <h2>get in touch with us</h2>
+        </div>
+
+        <form method="POST" class="form-container">
+          <div>
+            <label for="name">Name</label><br />
+            <input type="text" name="name" id="name" required minlength="5" />
+          </div>
+
+          <div>
+            <label for="email">E-Mail</label><br />
+            <input type="email" name="email" id="email" required />
+          </div>
+
+          <fieldset>
+            <legend>Gender</legend>
+            <div>
+              <label>
+                <input type="radio" name="gender" value="m" /> Male
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="gender" value="f" /> Female
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="gender" value="n" /> Prefer not to say
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Favourite dish</legend>
+
+            <div>
+              <label> <input type="checkbox" value="m" /> Meat </label>
+            </div>
+            <div>
+              <label> <input type="checkbox" value="v" /> Vegetarian </label>
+            </div>
+            <div>
+              <label> <input type="checkbox" value="f" /> Fish </label>
+            </div>
+            <div>
+              <label> <input type="checkbox" value="p" /> Pasta </label>
+            </div>
+            <div>
+              <label> <input type="checkbox" value="z" /> Pizza </label>
+            </div>
+            <div>
+              <label> <input type="checkbox" value="c" /> Chicken </label>
+            </div>
+          </fieldset>
+
+          <div>
+            <label for="age">Age:</label>
+            <select name="age" id="age">
+              <option value="15-20">15-20</option>
+              <option value="21-27">21-27</option>
+              <option value="28-33">28-33</option>
+              <option value="34-45">33-45</option>
+              <option value="46">46 and above</option>
+            </select>
+          </div>
+
+          <div>
+            <label>
+              Your message: <br />
+              <textarea name="message" id="message" required></textarea>
+            </label>
+          </div>
+
+          <button type="submit">Send</button>
+        </form>
       </section>
     </main>
 
-    <footer></footer>
+    <!-- About/Footer -->
+    <footer id="about">
+      <div class="container">
+        <iframe
+          width="350"
+          height="300"
+          frameborder="0"
+          src="https://www.bing.com/maps/embed?h=400&w=500&cp=-32.84267363196412~-79.55311209260208&lvl=2&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
+          scrolling="no"
+          allow="camera 'none'; microphone 'none'"
+        >
+        </iframe>
+
+        <article>
+          <h5>Enjoy food as you've never</h5>
+          <p>Street , City, Country</p>
+          <p>00000000000</p>
+
+          <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </article>
+
+        <hr />
+
+        <h5>&copy; 2022 Mahmoud Moussa</h5>
+      </div>
+    </footer>
+
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
